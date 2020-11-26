@@ -1,6 +1,6 @@
 [package]
 name = "iced_wgpu"
-version = "0.2.2"
+version = "0.3.0"
 authors = ["Héctor Ramón Jiménez <hector0193@gmail.com>"]
 edition = "2018"
 description = "A wgpu renderer for Iced"
@@ -10,6 +10,7 @@ repository = "https://github.com/hecrj/iced"
 [features]
 svg = ["resvg"]
 canvas = ["iced_graphics/canvas"]
+qr_code = ["iced_graphics/qr_code"]
 default_system_font = ["iced_graphics/font-source"]
 
 [dependencies]
@@ -26,7 +27,7 @@ version = "1.4"
 features = ["derive"]
 
 [dependencies.iced_native]
-version = "0.2"
+version = "0.3"
 path = "../native"
 
 [dependencies.iced_graphics]

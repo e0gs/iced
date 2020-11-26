@@ -74,10 +74,8 @@ pub struct Style {
     /// The width (thickness) of the rule line.
     pub width: u16,
     /// The radius of the line corners.
-    pub radius: u16,
+    pub radius: f32,
     /// The [`FillMode`] of the rule.
-    ///
-    /// [`FillMode`]: enum.FillMode.html
     pub fill_mode: FillMode,
 }
 
@@ -94,7 +92,7 @@ impl StyleSheet for Default {
         Style {
             color: [0.6, 0.6, 0.6, 0.51].into(),
             width: 1,
-            radius: 0,
+            radius: 0.0,
             fill_mode: FillMode::Percent(90.0),
         }
     }

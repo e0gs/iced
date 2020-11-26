@@ -9,6 +9,7 @@ repository = "https://github.com/hecrj/iced"
 
 [features]
 canvas = ["iced_graphics/canvas"]
+qr_code = ["iced_graphics/qr_code"]
 default_system_font = ["iced_graphics/font-source"]
 # Not supported yet!
 image = []
@@ -23,7 +24,7 @@ bytemuck = "1.4"
 log = "0.4"
 
 [dependencies.iced_native]
-version = "0.2"
+version = "0.3"
 path = "../native"
 
 [dependencies.iced_graphics]
